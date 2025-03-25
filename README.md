@@ -31,8 +31,29 @@ Purpose - Automated Rule Discovery - Uses AI to extract rules and constraints fr
 In the banking domain, ensuring accurate and rule-compliant customer data profiling is critical. Traditionally, this process requires significant manual effort to categorize and validate data while adhering to strict regulatory and business rules. However, manual checks are time-consuming, error-prone, and difficult to scale.
 
 Our goal with Gen AI-based data profiling is to explore whether AI can effectively interpret and enforce complex rules while improving efficiency and accuracy. By leveraging AI, we aim to automate data categorization, reduce human intervention, and enhance compliance—ultimately delivering more reliable results.
+
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+
+The solution follows a structured workflow to ensure seamless data profiling:
+
+1. Rule Extraction
+- The client provides a PDF document containing business and regulatory rules.
+- LLM models extract these rules from the PDF and convert them into a structured format.
+
+2. Rule Storage
+- The extracted rules are stored in a structured database, ensuring easy retrieval and scalability.
+- These rules define the criteria that customer data must adhere to for compliance.
+
+3. Data Ingestion
+- The client submits a dataset that needs to be profiled.
+- This dataset contains customer information, transactions, or other financial data.
+
+4. Rule Application
+- The stored rules are applied to the client’s dataset.
+- The system checks whether each data record complies with the extracted rules.
+
+5. Anomaly Detection
+- The system identifies and flags records that do not adhere to the given rules.
 
 ## 🛠️ How We Built It
 Briefly outline the technologies, frameworks, and tools used in development.
