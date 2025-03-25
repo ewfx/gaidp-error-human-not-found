@@ -57,8 +57,11 @@ The solution follows a structured workflow to ensure seamless data profiling:
 
 ## 🛠️ How We Built It
 LLM's - OpenAI GPT (free-tier API)
+
 Data Processing - Python libraries - Pandas, NumPy
+
 Code Generation - GPTbased Python Code Generation
+
 Visualization and Interactivity - Streamlit
 
 ## 🚧 Challenges We Faced
