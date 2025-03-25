@@ -104,4 +104,4 @@ Visualization and Interactivity - Streamlit
 - **Abhishek Kulkarni** - [GitHub](#) | [LinkedIn](#)
 - **Aditya Naik** - [GitHub](#) | [LinkedIn](#)
 - **Sanika Dhavale** - [GitHub](https://github.com/sanika-12) | [LinkedIn](https://www.linkedin.com/in/sanika-dhavale/)
-- **Shreya Regundwar** - [GitHub](#) | [LinkedIn](#)
+- **Shreya Regundwar** - [GitHub](https://github.com/Regundwarshreya) | [LinkedIn](https://www.linkedin.com/in/shreya-regundwar-112756221/)
