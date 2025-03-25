@@ -28,8 +28,9 @@ Purpose - Automated Rule Discovery - Uses AI to extract rules and constraints fr
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+In the banking domain, ensuring accurate and rule-compliant customer data profiling is critical. Traditionally, this process requires significant manual effort to categorize and validate data while adhering to strict regulatory and business rules. However, manual checks are time-consuming, error-prone, and difficult to scale.
 
+Our goal with Gen AI-based data profiling is to explore whether AI can effectively interpret and enforce complex rules while improving efficiency and accuracy. By leveraging AI, we aim to automate data categorization, reduce human intervention, and enhance compliance—ultimately delivering more reliable results.
 ## ⚙️ What It Does
 Explain the key features and functionalities of your project.
 
