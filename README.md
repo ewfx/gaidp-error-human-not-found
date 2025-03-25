@@ -1,7 +1,7 @@
 # 🚀 Project Name
 
 ## 📌 Table of Contents
-- [Introduction](#introduction)
+- [Introduction](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-introduction)
 - [Demo](#demo)
 - [Inspiration](#inspiration)
 - [What It Does](#what-it-does)
