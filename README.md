@@ -65,7 +65,25 @@ Code Generation - GPTbased Python Code Generation
 Visualization and Interactivity - Streamlit
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+
+1. Inaccurate Rule Extraction
+In the initial stages, the AI-based rule extraction process was not entirely accurate.
+
+Some extracted rules were incomplete or misinterpreted, leading to discrepancies in data categorization.
+
+This required manual validation and corrections, increasing the effort needed to refine the AI model.
+
+2. Lack of Ready-to-Use Datasets
+A major challenge was the absence of real-world datasets for testing the extracted rules.
+
+Client datasets were either unavailable or too sensitive to use directly due to privacy and compliance concerns.
+
+To address this, we implemented Synthetic Dataset Generation, creating test datasets that mimicked real-world scenarios while maintaining privacy and compliance considerations.
+
+3. Need for Manual Verification
+Despite AI-driven automation, manual validation was necessary to ensure that the dataset adhered to the extracted rules.
+
+AI misinterpretations or edge cases occasionally led to false positives or negatives in anomaly detection.
 
 ## 🏃 How to Run
 1. Clone the repository  
