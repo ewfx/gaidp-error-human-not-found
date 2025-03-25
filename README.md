@@ -100,11 +100,13 @@ AI misinterpretations or edge cases occasionally led to false positives or negat
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: Streamlit
+- 🔹 Backend: Python
+- 🔹 Database: Excel
+- 🔹 Other: OpenAI API 
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Abhishek Kulkarni** - [GitHub](#) | [LinkedIn](#)
+- **Aditya Naik** - [GitHub](#) | [LinkedIn](#)
+- **Sanika Dhavale** - [GitHub](https://github.com/sanika-12) | [LinkedIn](https://www.linkedin.com/in/sanika-dhavale/)
+- **Shreya Regundwar** - [GitHub](#) | [LinkedIn](#)
