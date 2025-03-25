@@ -56,7 +56,10 @@ The solution follows a structured workflow to ensure seamless data profiling:
 - The system identifies and flags records that do not adhere to the given rules.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+LLM's - OpenAI GPT (free-tier API)
+Data Processing - Python libraries - Pandas, NumPy
+Code Generation - GPTbased Python Code Generation
+Visualization and Interactivity - Streamlit
 
 ## 🚧 Challenges We Faced
 Describe the major technical or non-technical challenges your team encountered.
