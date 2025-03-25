@@ -14,7 +14,11 @@
 ---
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+Our project - Gen AI-based data profiling leverages generative AI to automate and enhance the process of analyzing, understanding, and improving data quality. 
+
+Purpose - Automated Rule Discovery - Uses AI to extract rules and constraints from datasets or documents (e.g., PDFs) and reduces manual effort in defining data validation rules.
+        - Context-Aware Profiling - Customizes profiling results based on business requirements.
+        - Scalable and Adaptive Profiling - Adapts to changes in data sources without extensive reconfiguration.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
