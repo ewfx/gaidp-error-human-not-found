@@ -2,14 +2,14 @@
 
 ## 📌 Table of Contents
 - [Introduction](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+- [Demo](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-demo)
+- [Inspiration](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-inspiration)
+- [What It Does](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-what-it-does)
+- [How We Built It](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-how-we-built-it)
+- [Challenges We Faced](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-challenges-we-faced)
+- [How to Run](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-how-to-run)
+- [Tech Stack](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-tech-stack)
+- [Team](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-tech-stack)
 
 ---
 
