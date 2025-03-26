@@ -2,7 +2,7 @@
 
 ## 📌 Table of Contents
 - [Introduction](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-introduction)
-- [Demo](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-demo)
+- [Demo](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/artifacts/demo/demo.mp4)
 - [Inspiration](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#-inspiration)
 - [What It Does](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-what-it-does)
 - [How We Built It](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/README.md#%EF%B8%8F-how-we-built-it)
@@ -21,11 +21,10 @@ Purpose - Automated Rule Discovery - Uses AI to extract rules and constraints fr
         - Scalable and Adaptive Profiling - Adapts to changes in data sources without extensive reconfiguration.
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/artifacts/demo/demo.mp4) (if applicable)  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
+![Screenshot 1](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/artifacts/demo/UI.jpeg)
 
 ## 💡 Inspiration
 In the banking domain, ensuring accurate and rule-compliant customer data profiling is critical. Traditionally, this process requires significant manual effort to categorize and validate data while adhering to strict regulatory and business rules. However, manual checks are time-consuming, error-prone, and difficult to scale.
@@ -87,11 +86,12 @@ Visualization and Interactivity - Streamlit
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip install -r requirements.txt
    ```
 3. Run the project  
    ```sh
-   npm start  # or python app.py
+   cd ./code/src
+   streamlit run '.\GenAI Data Profiling Tool.py'
    ```
 
 ## 🏗️ Tech Stack
@@ -102,6 +102,6 @@ Visualization and Interactivity - Streamlit
 
 ## 👥 Team
 - **Abhishek Kulkarni** - [GitHub](https://github.com/abhishekulkarni02) | [LinkedIn](#)
-- **Aditya Naik** - [GitHub](#) | [LinkedIn](#)
+- **Aditya Naik** - [GitHub]([#](https://github.com/Aditya11502)) | [LinkedIn](#)
 - **Sanika Dhavale** - [GitHub](https://github.com/sanika-12) | [LinkedIn](https://www.linkedin.com/in/sanika-dhavale/)
 - **Shreya Regundwar** - [GitHub](https://github.com/Regundwarshreya) | [LinkedIn](https://www.linkedin.com/in/shreya-regundwar-112756221/)
