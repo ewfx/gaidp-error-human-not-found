@@ -56,7 +56,7 @@ The solution follows a structured workflow to ensure seamless data profiling:
 - The system identifies and flags records that do not adhere to the given rules.
 
 ## 🛠️ How We Built It
-LLM's - OpenAI GPT (free-tier API)
+LLM's - Google Gemini (free-tier API)
 
 Data Processing - Python libraries - Pandas, NumPy
 
