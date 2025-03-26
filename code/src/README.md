@@ -1,3 +1,1 @@
-## Delete this file
-
-Instead place your source files here
+This Folder contains codes related to proposed solutions
