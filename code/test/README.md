@@ -1,3 +1,1 @@
-## Delete this file
-
-Instead place your test files here
+This Folder contains the Test output, storage and other reports
