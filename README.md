@@ -102,6 +102,6 @@ Visualization and Interactivity - Streamlit
 
 ## 👥 Team
 - **Abhishek Kulkarni** - [GitHub](https://github.com/abhishekulkarni02) | [LinkedIn]()
-- **Aditya Naik** - [GitHub]([#](https://github.com/aditya11502)) | [LinkedIn](#)
+- **Aditya Naik** - [GitHub](https://github.com/aditya11502) | [LinkedIn](#)
 - **Sanika Dhavale** - [GitHub](https://github.com/sanika-12) | [LinkedIn](https://www.linkedin.com/in/sanika-dhavale/)
 - **Shreya Regundwar** - [GitHub](https://github.com/Regundwarshreya) | [LinkedIn](https://www.linkedin.com/in/shreya-regundwar-112756221/)
