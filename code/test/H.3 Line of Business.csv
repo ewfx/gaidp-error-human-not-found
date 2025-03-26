@@ -1,0 +1,3 @@
+Line of Business,Line of Business Description
+True,True
+"['Free text indicating the internal line of business.', 'Example values: Private Banking, Corporate Banking, Asset-Based Lending, etc.', 'Defines the set of allowable values for Field 27 on Schedule H.1 and Field 22 on Schedule H.2.']",['Free text describing the internal line of business.']
