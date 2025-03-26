@@ -1,0 +1,1746 @@
+{
+    "H.1 Corporate Loan Data": {
+        "Customer ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Unique internal identifier for the customer relationship under which the obligor's exposure is aggregated in the reporting entity's credit systems.",
+                "Relationship concept under which multiple borrowers are aggregated because they have related risks (e.g., parent/subsidiary).",
+                "For stand-alone or ultimate parent obligors, may be the same as the unique internal identifier for the obligor in Field 2."
+            ]
+        },
+        "Internal ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Reporting entity\u2019s unique internal identifier for the obligor.",
+                "Borrower concept that identifies the entity under which multiple loans are aggregated."
+            ]
+        },
+        "Original Internal ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Internal identification code assigned to the obligor in the previous submission.",
+                "If no change from prior submission, or first submission, the Internal ID from Field 2 should be used."
+            ]
+        },
+        "Obligor Name": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the obligor name on the credit facility.",
+                "Full legal corporate name is desirable.",
+                "If the borrowing entity is an individual(s) (Natural Person(s)), substitute with the text: \"Individual.\"",
+                "For fronting exposures, report legal name of the participant lender."
+            ]
+        },
+        "City": {
+            "Mandatory": true,
+            "Condition": [
+                "Free text indicating the City where the Obligor is domiciled.",
+                "Report the name of the city in which the obligor is domiciled (as defined in the FR Y-9C Glossary entry for \u201cdomicile\u201d)."
+            ]
+        },
+        "Country": {
+            "Mandatory": true,
+            "Condition": [
+                "Use the 2 letter Country Code.",
+                "Report the domicile of the obligor (as defined in the FR Y-9C Glossary entry for \u201cdomicile\u201d)."
+            ]
+        },
+        "Zip Code": {
+            "Mandatory": true,
+            "Condition": [
+                "For locations within the 50 US states, Washington DC, Puerto Rico, the US Virgin Islands, Guam, Palau, Micronesia, the Northern Marianas, or the Marshall Islands: five-digit ZIP code. If the ZIP code begins with zeroes, leading zeroes must be specified with no punctuation.",
+                "For International: use country specific postal code.",
+                "Report the five-digit zip code for locations within the 50 US states, Washington DC, Puerto Rico, the US Virgin Islands, Guam, Palau, Micronesia, the Northern Marianas, or the Marshall Islands. For all other locations report the foreign mailing code for the domicile of the obligor (as defined in the FR Y-9C Glossary entry for \u201cdomicile\u201d)."
+            ]
+        },
+        "Industry Code": {
+            "Mandatory": true,
+            "Condition": [
+                "Report 4 to 6 digit number. If this code is not available, then provide a SIC or GICS industry code.",
+                "Report the numeric code that describes the primary business activity of the obligor according to the North American Industry Classification System (NAICS).",
+                "If the NAICS code is not available, provide either the Standard Industrial Classification (SIC), or Global Industry Classification Standard (GICS).",
+                "If the obligor is an individual, the industry code should be consistent with the industry in which the commercial purpose of the loan operates.",
+                "If the business or individual operates in multiple industries, the BHC or IHC or SLHC should report the industry that best represents the commercial risk of the loan (i.e., the predominant industry)."
+            ]
+        },
+        "Industry Code Type": {
+            "Mandatory": true,
+            "Condition": [
+                "1. NAICS",
+                "2. SIC",
+                "3. GICS",
+                "Select the type of industry code identification scheme used in Field 8."
+            ]
+        },
+        "Obligor Internal Risk Rating": {
+            "Mandatory": true,
+            "Condition": [
+                "Free text indicating the obligor rating grade.",
+                "Obligor Internal Risk Rating must be consistent with Schedule H.4 (Internal Risk Rating Schedule), Field 1.",
+                "Report the obligor rating grade from the reporting entity\u2019s internal risk rating system. For fronting exposures, report the participant lender\u2019s rating grade from the reporting entity\u2019s internal risk rating system.",
+                "This is the reporting entity\u2019s probability of default (PD) rating. If the reporting entity uses a one-dimensional risk rating system, record that rating here."
+            ]
+        },
+        "TIN": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be the 9 digit identification assigned by the Internal Revenue Service for the obligor identified in field 2.",
+                "Allowable forms are either ##-#######, #########, or \u2018NA\u2019.",
+                "If the borrowing entity is an individual(s) (Natural Person(s)), do not report Social Security Number; instead enter \u2018NA\u2019.",
+                "If, the borrowing entity does not have a TIN, enter \u2018NA\u2019."
+            ]
+        },
+        "Stock Exchange": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the name of the Stock Exchange on which the primary stock of the obligor, or its parent, trades.",
+                "If the borrowing entity is not publicly traded, enter \u2018NA\u2019.",
+                "In cases where the subsidiary is the obligor and the subsidiary is publicly traded, report the Stock Exchange and Ticker Symbol (field #13) of the subsidiary, regardless of ownership structure.",
+                "If the subsidiary is not publicly traded, but its parent is, report the stock exchange and ticker symbol of the parent. Report in the same manner when the subsidiary is minority owned."
+            ]
+        },
+        "Ticker Symbol": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the Stock Symbol for stocks listed and traded on the regulated exchange provided in Field 12.",
+                "For subsidiaries of public companies, use parent ticker symbol from its primary Stock Exchange.",
+                "If the borrowing entity is not publicly traded, enter \u2018NA\u2019.",
+                "In cases where the subsidiary is the obligor and the subsidiary is publicly traded, report the Stock Exchange (field #12) and Ticker Symbol of the subsidiary, regardless of ownership structure.",
+                "If the subsidiary is not publicly traded, but its parent is, report the stock exchange and ticker symbol of the parent. Report in the same manner when the subsidiary is minority owned."
+            ]
+        },
+        "CUSIP": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the CUSIP of the obligor, if available.",
+                "Must be valid 6 digit CUSIP number issued by the CUSIP Service Bureau.",
+                "If a CUSIP does not apply, enter \u2018NA\u2019."
+            ]
+        },
+        "Internal Credit Facility ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the reporting entity\u2019s unique internal identifier for this credit facility record.",
+                "It must identify the credit facility for its entire life and must be unique.",
+                "Must be unique within a submission and over time. That is, the same submission file must not have two facilities with the same Credit Facility ID.",
+                "May not contain a carriage return, line feed, comma or any unprintable character.",
+                "In the event the internal facility ID changes (i.e., loan was converted to a new system through migration or acquisition), also provide Original Internal credit facility ID in Field 16.",
+                "For fronting exposures, report the unique internal identifier assigned to the participant lender\u2019s fronting allocation."
+            ]
+        },
+        "Original Internal Credit Facility ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the Internal identification code assigned to the credit facility record in the previous submission.",
+                "If the credit facility represents the fulfillment of a commitment to commit or a syndicated pipeline loan reported in the previous submission, report the credit facility ID used for that formerly reported exposure.",
+                "If there is no change from the prior submission, or if this is the first submission, then the Internal credit facility ID reported in Field 15 should be used as the Original Internal credit facility ID.",
+                "For disposed credit facilities, where the reason for the disposal is rebookings/restructures where loan amounts are transferred or combined between obligations, report the ID separated by a , (comma).",
+                "May not contain a carriage return, line feed, or any unprintable character.",
+                "Provide the ID separated by a , (comma). For example, if facilities 123 and XYZ are aggregated into facility ABC then the \"Unique ID\" (H.1 Internal Credit Facility ID Field 15, H.2 Loan Number Field 1) is reported as ABC and the \"Original ID\" (H.1 Original Internal Credit Facility ID Field 16, H.2 Original/Previous Loan Number Field 35) is reported as 123, XYZ."
+            ]
+        },
+        "Origination Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the origination date.",
+                "The origination date is the contractual date of the credit agreement. (In most cases, this is the date the commitment to lend becomes a legally binding commitment).",
+                "If there has been a major modification to the loan such that the obligor executes a new or amended and restated credit agreement, use the revised contractual date of the credit agreement as the origination date.",
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Must be before or equal to the period end date of the data.",
+                "The following independent examples would generally not result in a change in the contractual date of the loan, and thus would not be considered major modifications: (1) extension options at the sole discretion of the borrower; (2) covenants; (3) waivers; (4) change in the maturity date; (5) re-pricing; or (6) periodic credit reviews. Additionally, exclude all renewals which meet the definition in the \u2018Renewal Date\u2019 Field 91.",
+                "For corporate loans and leases in the syndicated pipeline, report the date on which the BHC or IHC or SLHC has extended terms to the borrower in the signed commitment letter (option 1 in field 100). Once the deal is reported as closed and settled (option 4 in Field 100), report the updated origination date per the definition above.",
+                "For commitments to commit which are not syndicated, report the date on which the BHC or IHC or SLHC extended terms to the borrower."
+            ]
+        },
+        "Maturity Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the maturity date.",
+                "The maturity date is the last date upon which the funds must be repaid, inclusive of extension options that are solely at the borrower\u2019s discretion, and according to the most recent terms of the credit agreement.",
+                "If extension options are conditional on certain terms being met, such extensions should be considered to be at the sole discretion of the borrower.",
+                "For demand loan, enter \u20189999-01-01\u2019.",
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "For corporate loans in the syndicated pipeline, until the syndicated loan is reported as closed and settled (option4 in Field 100), report the estimated maturity date based on the tenor stated in the commitment letter.",
+                "For commitments to commit which are not syndicated, report the estimated maturity date based on the tenor in the terms extended to the borrower."
+            ]
+        },
+        "Credit Facility Type": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the credit facility type.",
+                "Use the following credit facility type descriptions, only.",
+                "Enter number code of the description.",
+                "Note that these descriptions and codes mirror the requirements for Shared National Credit reporting and therefore not all will be relevant for Corporate Loan reporting.",
+                "If the Credit facility type is \u201cOther,\u201d provide description in Field 21.",
+                "Allowable values: 0 OTHER, 1 REVOLVING CREDIT, 2 REVOLVING CREDIT CONVERTING TO TERM LOAN, 3 REVOLVING CREDIT - ASSET BASED, 4 REVOLVING CREDIT \u2013 DIP (Debtor-In-Possession), 5 NON-REVOLVING LINE OF CREDIT, 6 NON-REVOLVING LINE OF CREDIT CONVERTING TO TERM LOAN, 7 TERM LOAN, 8 TERM LOAN \u2013 A, 9 TERM LOAN \u2013 B, 10 TERM LOAN \u2013 C, 11 TERM LOAN \u2013 BRIDGE, 12 TERM LOAN - ASSET BASED, 13 TERM LOAN \u2013 DIP (Debtor-In-Possession), 14 CAPITALIZED LEASE OBLIGATION, 15 STANDBY LETTER OF CREDIT, 16 OTHER REAL ESTATE OWNED, 17 OTHER ASSET, 18 FRONTING EXPOSURE, 19 COMMITMENT TO COMMIT"
+            ]
+        },
+        "Other Credit Facility Type Description": {
+            "Mandatory": true,
+            "Condition": [
+                "If the credit facility is listed as \u201cOther\u201d in Field 20, provide a description of the \u201cother credit facility type.\u201d",
+                "Leave this field blank if Field 20 is not zero."
+            ]
+        },
+        "Credit Facility Purpose": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the credit facility purpose.",
+                "Use the provided credit purpose descriptions and codes.",
+                "If the credit facility purpose is 'Other', provide a description in Field 23.",
+                "For fronting exposures, report the credit facility purpose based on the primary credit facility.",
+                "Allowed values are numeric codes corresponding to the descriptions."
+            ]
+        },
+        "Other Credit Facility Purpose Description": {
+            "Mandatory": true,
+            "Condition": [
+                "If the credit facility purpose is listed as 'Other' in Field 22, provide a description of the 'other credit facility type'.",
+                "Leave this field blank if Field 22 is not zero.",
+                "Allowed values are free text."
+            ]
+        },
+        "Committed Exposure Global": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the total commitment amount.",
+                "Sum of loan and lease financing receivables recorded in FR Y-9C, Schedule HC-C (reported in Field 25) and any unused portion of the commitment recorded in Schedules HC-F, HC-G, and HC-L.",
+                "Report the total commitment amount and not the constrained commitment amount.",
+                "For facilities with multiple lenders, only provide the reporting entity's pro-rata commitment, net of the above noted adjustments.",
+                "For corporate loans and leases in the syndicated pipeline, reported as options 1 (single-signed), 2 (dual-signed) or 3 (closed but not settled) in Field 100, report the total commitment amount approved and stated in the commitment letter.",
+                "For commitments to commit which are not syndicated, report the total commitment amount approved and offered to the borrower.",
+                "Value must be a rounded whole dollar amount without any non-numeric formatting."
+            ]
+        },
+        "Utilized Exposure Global": {
+            "Mandatory": true,
+            "Condition": [
+                "Report all loan and lease financing receivables consistent with the FR Y-9C instructions.",
+                "Report the amortized cost for HFI loans and the lower of cost or fair value for HFS loans.",
+                "Report at fair value all HFS and HFI loans that the firm has elected to report under a fair value option.",
+                "For facilities with multiple lenders, only provide the reporting entity\u2019s pro-rata utilized exposure, net of the above noted adjustments.",
+                "For fully undrawn commitments, enter 0 (zero).",
+                "For fronting exposures, report any funds advanced to the borrower on behalf of the participant lender as identified in field 4 (Obligor Name).",
+                "For disposed credit facilities, report 0 (zero).",
+                "Value must be a rounded whole dollar amount with no cents, and without any non-numeric formatting."
+            ]
+        },
+        "Line Reported on FR Y-9C": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the integer code corresponding to the line number on the FR Y-9C, Schedule HC-C, in which the outstanding balance is recorded or, in the case of an unused commitment, the line number in which the credit facility would be recorded if it were drawn.",
+                "Refer to the FR Y-9C instructions for definitions of Schedule HC-C line item categories.",
+                "If the credit facility includes multiple loans, report the integer code corresponding to the type of loan which accounts for the largest share of the credit facility committed balance.",
+                "For fronting exposures, report the integer code corresponding to the line number on the HC-C in which the exposure would be recorded if it were drawn by the borrower.",
+                "Allowed values are numeric codes corresponding to the FR Y-9C Schedule HC-C line item categories."
+            ]
+        },
+        "Line of Business": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide the name of the internal line of business.",
+                "Must be consistent with line of business names as reported in Schedule H.3 (Line of Business Schedule), Field 1.",
+                "Value is free text."
+            ]
+        },
+        "Cumulative Charge-offs": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the cumulative net charge-offs associated with the credit facility on the reporting entity's books.",
+                "Cumulative net charge-offs are the amount reflected over the life of the credit facility.",
+                "If cumulative charge-offs are greater than the current commitment balance but less than the original commitment, report the total cumulative charge-off amount even though it exceeds the current commitment.",
+                "For disposed credit facilities, report the cumulative charge-offs as of the date of disposition.",
+                "For fronting exposures, report the cumulative net charge-offs associated with impairment of the participant lender.",
+                "Value must be a rounded whole dollar amount without any non-numeric formatting.",
+                "Should be 0 if there is no charge-off for the facility.",
+                "Should be \u2018NA\u2019 for loans held for sale or accounted for under a fair value option."
+            ]
+        },
+        "# Days Principal or Interest Past Due": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the longest number of days principal and/or interest payments are past due, if such payments are past due 30 days or more.",
+                "Report the number of days past due as of the last day of the reporting period or disposition date.",
+                "If payments are not past due 30 days or more, enter zero.",
+                "For fronting exposures, report the longest number of days principal and/or interest payments are past due, if such payments are past due 30 days or more for the participant lender.",
+                "For fully undrawn commitments, enter 0.",
+                "Value must be a number."
+            ]
+        },
+        "Non-Accrual Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the date the credit facility was placed on non-accrual, if applicable.",
+                "If a non-accrual date does not exist, enter 9999-12-31.",
+                "For fronting exposures, report the date the fronting facility was placed on non-accrual.",
+                "For fully undrawn commitments, enter 9999-12-31.",
+                "Value must be in yyyy-mm-dd format."
+            ]
+        },
+        "Participation Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate if the credit facility is participated or syndicated among other financial institutions and if it is part of the Shared National Credit Program.",
+                "For fronting exposures, report option 1 \u2018No\u2019.",
+                "Allowed values are defined as below:",
+                "1. No",
+                "2. Yes, syndicate/participant in syndication but does not meet the definition of a Shared National Credit",
+                "3. Yes, agent in syndication or participation but does not meet the definition of a Shared National Credit",
+                "4. Yes, syndicate/participant in Shared National Credit",
+                "5. Yes, agent in Shared National Credit"
+            ]
+        },
+        "Lien Position": {
+            "Mandatory": true,
+            "Condition": [
+                "Report an integer code indicating the lien position of the credit facility.",
+                "Possible values:",
+                "\t1. First-Lien Senior",
+                "\t2. Second Lien",
+                "\t3. Senior Unsecured",
+                "\t4. Contractually Subordinated",
+                "If the facility contains loans with different lien positions, aggregate the committed balance by lien position and report the lien position associated with the predominant aggregate value.",
+                "For fronting exposures, report the integer code that is applicable for the primary credit facility."
+            ]
+        },
+        "Security Type": {
+            "Mandatory": true,
+            "Condition": [
+                "Report an integer code indicating the predominant security type of the collateral.",
+                "Applicable if security is provided by collateral other than or in addition to Real Estate.",
+                "If a credit facility has loans secured by different asset types, aggregate the committed balance by type of asset in the collateral pool and report the security type associated with the predominant aggregate value.",
+                "Possible values:",
+                "\t0 Real Estate only",
+                "\t1 Cash and Marketable Securities",
+                "\t2 Accounts Receivable and Inventory",
+                "\t3 Fixed Assets excluding Real Estate",
+                "\t4 Blanket Lien (only for loans with equal seniority across all unencumbered assets)",
+                "\t5 Other",
+                "\t6 Unsecured",
+                "For fronting exposures, report the integer code that is applicable for the primary credit facility."
+            ]
+        },
+        "Interest Rate Variability": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate the variability of current interest rates to maturity.",
+                "Possible values:",
+                "\t0. DO NOT USE",
+                "\t1. Fixed",
+                "\t2. Floating",
+                "\t3. Mixed",
+                "\t4. Entirely fee based",
+                "For fully undrawn commitments, report interest rate variability that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date. If such fully undrawn credit facility allows for either fixed or floating draws at the borrower\u2019s discretion, then report \u20183\u2019 (Mixed).",
+                "For facilities where revenue is entirely fee based and no interest is or will ever be collected, enter \u20184\u2019 (Entirely fee based).",
+                "For fronting exposures, indicate the variability of current interest rates to maturity based on the rate associated with the fronting facility."
+            ]
+        },
+        "Interest Rate": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the current interest rate charged on the credit facility as a decimal (e.g., 0.0575 for 5.75%).",
+                "If the facility includes multiple draws with different interest rates, enter the dollar weighted average interest rate that approximates the overall rate on the drawn balance of the facility. Report interest rate exclusive of interest rate swaps.",
+                "Report \u2018NA\u2019 if the facility is entirely fee based.",
+                "For fully undrawn commitments, report the interest rate that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date.",
+                "For credit facilities that are fully undrawn and allow for multiple rates, at the borrower\u2019s discretion, report the rate that was most conservative (highest) as of the most recent origination or renewal date. If the facility has been acquired more recently than the most recent origination or renewal date, report the rate that was most conservative as of the date of acquisition.",
+                "For credit facilities that are fully undrawn and include multiple lines of credit with different interest rates, enter the dollar weighted average interest rate that approximates the overall rate as if the credit facility was funded and fully drawn on the reporting date.",
+                "For fronting exposures, report the current interest rate charged based on the rate associated with the fronting facility."
+            ]
+        },
+        "Interest Rate Index": {
+            "Mandatory": true,
+            "Condition": [
+                "For floating rate credit facilities, report the base interest rate using integer code.",
+                "If obligor has an option, select the index actually in use.",
+                "Possible values:",
+                "\t0. DO NOT USE",
+                "\t1. LIBOR",
+                "\t2. PRIME or Base",
+                "\t3. Treasury Index",
+                "\t4. Other",
+                "\t5. Not applicable (Fixed or entirely fee based)",
+                "\t6. Mixed",
+                "\t7. SOFR",
+                "If the credit facility is fixed or entirely fee based (as designated in Field 37) choose the integer for \u201cNot applicable (Fixed or entirely fee based)\u201d.",
+                "For credit facilities where the base interest rate is mixed, choose the integer for \u201cMixed.\u201d",
+                "For fully undrawn commitments, report the interest rate index that would apply if the credit facility was funded and fully drawn on the reporting date. If such fully undrawn credit facility allows for multiple indices at the borrower\u2019s discretion, then report the interest rate index used to calculate Field 38 (Interest Rate).",
+                "For fronting exposures, report this field based on the rate associated with the fronting facility."
+            ]
+        },
+        "Interest Rate Spread": {
+            "Mandatory": true,
+            "Condition": [
+                "For floating rate credit facilities, report the spread over base rate in basis points as a decimal (e.g., 0.0575 for 5.75%).",
+                "If the credit facility is fixed or entirely fee based (as designated in Field 37) populate \u2018NA\u2019.",
+                "If the facility includes multiple draws with different spreads, provide the spread that approximates the overall spread on the facility.",
+                "For fully undrawn commitments, report the interest rate spread that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date.",
+                "For fronting exposures, report the interest rate spread based on the rate associated with the fronting facility.",
+                "Negative numbers can be submitted. Use a negative sign \u2018-\u2018 not parenthesis ()."
+            ]
+        },
+        "Interest Rate Ceiling": {
+            "Mandatory": true,
+            "Condition": [
+                "For floating rate credit facilities, report the rate ceiling as a decimal (e.g., 0.0575 for 5.75%) if one is contained in the credit agreement.",
+                "If there is no ceiling, populate with \u2018NONE\u2019.",
+                "If the credit facility is fixed or entirely fee based (as designated in Field 37) populate \u2018NA\u2019.",
+                "For facilities with multiple interest rate ceilings, provide the maximum interest rate ceiling.",
+                "For fully undrawn commitments, report the interest rate ceiling that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date.",
+                "For fronting exposures, report the interest rate ceiling based on the rate associated with the fronting facility."
+            ]
+        },
+        "Interest Rate Floor": {
+            "Mandatory": true,
+            "Condition": [
+                "For floating rate credit facilities, report the rate floor as a decimal (e.g., 0.0575 for 5.75%) if one is contained in the credit agreement.",
+                "If there is no floor, populate with \u2018NONE\u2019.",
+                "If the credit facility is fixed or entirely fee based (as designated in Field 37) populate \u2018NA\u2019.",
+                "For facilities with multiple interest rate floors, provide the minimum interest rate floor.",
+                "For fully undrawn commitments, report the interest rate floor that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date.",
+                "For fronting exposures, report the interest rate floor based on the rate associated with the fronting facility."
+            ]
+        },
+        "Interest Income Tax Status": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the tax status of interest income for Federal or State Income Tax purposes.",
+                "Interest Income Tax Status should be determined by whether the interest income received by the BHC or IHC or SLHC is tax exempt (at Federal, State, etc.).",
+                "Possible values:",
+                "\t1. Taxable",
+                "\t2. Tax Exempt (if federal or state tax exempt, choose \u20192\u2019)"
+            ]
+        },
+        "Guarantor Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate if the credit facility is guaranteed using an integer code.",
+                "Report the option that reflects the guarantee of the guarantor identified in Field 45.",
+                "Possible values:",
+                "\t1. Full guarantee (explicit recourse for full repayment by a single guarantor other than a U.S. Government Agency)",
+                "\t2. Partial guarantee (explicit recourse for repayment of a portion of the credit obligation. Includes partial guarantees by a U.S. Government Agency)",
+                "\t3. U.S. Government Agency Guarantee (credit facility is fully guaranteed by a U.S. Government Agency)",
+                "\t4. No guarantee (no explicit recourse for repayment)",
+                "For fronting exposures, report the integer code that is applicable for the primary facility."
+            ]
+        },
+        "Guarantor Internal ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the unique guarantor identifier.",
+                "For facilities with multiple guarantors, provide the unique guarantor identifier for the primary or most substantial guarantor.",
+                "If the credit facility is not guaranteed, enter \u2018NA\u2019."
+            ]
+        },
+        "Guarantor Name": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the guarantor name on the credit facility.",
+                "Full legal corporate name is desirable. If the guarantor is an individual(s) (Natural Person (s)), do not report the name; instead substitute with the text: 'Individual.'",
+                "For facilities with multiple guarantors, provide the guarantor name for the primary or most substantial guarantor.",
+                "If the credit facility is not guaranteed, enter \u2018NA\u2019"
+            ]
+        },
+        "Guarantor TIN": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the Taxpayer Identification Number (TIN) assigned to the guarantor by the U.S. Internal Revenue Service (IRS).",
+                "If the guarantor is an individual(s) (Natural Person(s)), do not report Social Security Number; instead enter \u2018NA\u2019.",
+                "If the guarantor does not have a TIN, enter \u2018NA\u2019.",
+                "For facilities with multiple guarantors, provide the TIN assigned to the primary or most substantial guarantor.",
+                "Allowable forms are either ##-#######, #########, or \u2018NA\u2019.",
+                "If the credit facility is not guaranteed, enter \u2018NA\u2019."
+            ]
+        },
+        "Guarantor Internal Risk Rating": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the guarantor rating grade from the reporting entity\u2019s internal risk rating system.",
+                "This is the reporting entity\u2019s probability of default (PD) rating. If the reporting entity uses a one-dimensional risk rating system, record that rating here.",
+                "For facilities with multiple guarantors, provide the guarantor rating grade for the primary or most substantial guarantor.",
+                "Free text indicating the obligor rating grade.",
+                "If the credit facility is not guaranteed or if the guarantor does not have a rating, enter \u2018NA\u2019"
+            ]
+        },
+        "Entity Internal ID": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the reporting BHC\u2019s or IHC\u2019s or SLHC\u2019s unique internal identifier for the entity that is the primary source of repayment for the facility in Field 15",
+                "Leave blank if the entity is the same as the Obligor identified in Field 2."
+            ]
+        },
+        "Entity Name": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the name of the entity that is the primary source of repayment for the facility in Field 15.",
+                "Full legal corporate name is desirable. If the entity is an individual(s) (Natural Person(s)), do not report the name; instead substitute with the text: 'Individual.'",
+                "Leave blank if the entity is the same as the Obligor identified in Field 2."
+            ]
+        },
+        "Entity Internal Risk Rating": {
+            "Mandatory": true,
+            "Condition": [
+                "For the entity identified in Field 49, report the entity rating grade from the reporting BHC\u2019s or IHC\u2019s or SLHC\u2019s internal risk rating system.",
+                "This is the reporting entity\u2019s probability of default (PD) rating. If the reporting BHC or IHC or SLHC uses a one-dimensional risk rating system, record that rating here.",
+                "Free text indicating the entity rating grade.",
+                "Leave blank if the entity is the same as the Obligor identified in Field 2."
+            ]
+        },
+        "Date of Financials": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the as of date of the financial information, related to the entity identified in Field 2 or Field 49, that is reported in the Obligor Financial Data Section.",
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14"
+            ]
+        },
+        "Date of Last Audit": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the date of the last audited financial statements of the entity identified in Field 2 or Field 49.",
+                "Date of last audit may or may not be the same date as the date of the financials (Field 52).",
+                "If there is no audit date, enter 9999-12-31.",
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14"
+            ]
+        },
+        "Net Sales Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the gross sales of the entity identified in Field 2 or Field 49 reduced by cash discounts, trade discounts, and returned sales and allowances for which credit is given to customers less returns and allowances, freight out, and cash discounts allowed for the designated period.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Net Sales Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the gross sales of the entity identified in Field 2 or Field 49 reduced by cash discounts, trade discounts, and returned sales and allowances for which credit is given to customers less returns and allowances, freight out, and cash discounts allowed.",
+                "Report data for the trailing twelve month (TTM) period ended one year prior to the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Operating Income": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the amount of profit (or loss) realized from continuing operations of the entity identified in Field 2 or Field 49; typically represented as sales less items such as cost of goods sold, operating expenses, amortization and depreciation.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Depreciation & Amortization": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the total depreciation and amortization costs of the entity identified in Field 2 or Field 49 of tangible and intangible assets allocated against revenue for the current period.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Interest Expense": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the periodic expense to the entity identified in Field 2 or Field 49 of securing short and long-term debt.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Net Income Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the income (or loss) reported by the entity identified in Field 2 or Field 49 after expenses and losses have been subtracted from all revenues and gains for the fiscal period including discontinued operations.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Net Income Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the income (or loss) reported by the entity identified in Field 2 or Field 49 after expenses and losses have been subtracted from all revenues and gains for the fiscal period including discontinued operations.",
+                "Report data for the trailing twelve month (TTM) period ended one year prior to the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Cash & Marketable Securities": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the cash, depository accounts and marketable securities of the entity identified in Field 2 or Field 49 that can be easily sold and readily converted into cash.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Accounts Receivable": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the money owed to the entity identified in Field 2 or Field 49 for merchandise or services or services sold on open account.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Accounts Receivable Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the money owed to the entity identified in Field 2 or Field 49 for merchandise or services or services sold on open account.",
+                "Report data one year prior to date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Inventory Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the value of the raw materials, work in process, supplies used in operations, finished goods, and merchandise bought for resale of the entity identified in Field 2 or Field 49.",
+                "Must be a rounded whole dollar amount.",
+                "Should supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Inventory Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the value of the raw materials, work in process, supplies used in operations, finished goods, and merchandise bought for resale of the entity identified in Field 2 or Field 49.",
+                "Report data one year prior to date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Current Assets Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the cash, accounts receivable, inventory, and other assets of the entity identified in Field 2 or Field 49 that are likely to be converted into cash, sold, exchanged, or expensed in the normal course of business, usually within one year and other assets expected to be converted to cash within a year.",
+                "Examples include accounts receivable, prepaid expenses, and many negotiable securities as of the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Current Assets Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the cash, accounts receivable, inventory, and other assets of the entity identified in Field 2 or Field 49 that are likely to be converted into cash, sold, exchanged, or expensed in the normal course of business, usually within one year and other assets expected to be converted to cash within a year.",
+                "Examples include accounts receivable, prepaid expenses, and many negotiable securities.",
+                "Report data one year prior to the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Tangible Assets": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the assets of the entity identified in Field 2 or Field 49 having a physical existence, such as cash, equipment, real estate, real property, and personal property such as buildings and machinery; accounts receivable are also usually considered tangible assets for accounting purposes.",
+                "Tangible assets are distinguished from intangible assets, such as trademarks, copyrights, and goodwill, and natural resources (timberlands, oil reserves, and coal deposits).",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Fixed Assets": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the tangible property of the entity identified in Field 2 or Field 49 used in the business and not for resale.",
+                "This includes, but is not limited to, buildings, furniture, fixtures, equipment, and land.",
+                "Report fixed assets net of depreciation.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Total Assets (TA) Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the sum of the current assets of the entity identified in Field 2 or Field 49 plus net property, plant, and equipment plus other non-current assets (including, but not limited to, intangible assets, deferred items, and investments and advances) as of the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Total Assets (TA) Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the sum of the current assets of the entity identified in Field 2 or Field 49 plus net property, plant, and equipment plus other non-current assets (including, but not limited to, intangible assets, deferred items, and investments and advances).",
+                "Report data one year prior to date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Accounts Payable (A/P) Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the obligations owed to the creditors of the entity identified in Field 2 or Field 49 arising from the entity\u2019s ongoing operations, including the purchase of goods, materials, supplies, and services as of the date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Accounts Payable (A/P) Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the obligations owed to the creditors of the entity identified in Field 2 or Field 49 arising from the entity\u2019s ongoing operations, including the purchase of goods, materials, supplies, and services.",
+                "Report data one year prior to date reported in Field 52.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Short Term Debt": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the debt obligations of the entity identified in Field 2 or Field 49 with a term of less than one year.",
+                "Must be a rounded whole dollar amount.",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas, or decimal)."
+            ]
+        },
+        "Current Maturities of Long Term Debt": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the portion of long-term debt of the entity identified in Field 2 or Field 49 due within one year.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Current Liabilities Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the short-term debt, accounts payable and other current liabilities of the entity identified in Field 2 or Field 49 that are due within one year.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Current Liabilities Prior Year": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the short-term debt, accounts payable and other current liabilities of the entity identified in Field 2 or Field 49 that are due within one year.",
+                "Report data one year prior to the date reported in Field 52.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Long Term Debt": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the liabilities of the entity identified in Field 2 or Field 49 that are due in one year or more.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Minority Interest": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the interest of shareholders who, in the aggregate, own less than half the shares in a corporation.",
+                "On the consolidated balance sheets of companies whose subsidiaries are not wholly owned, the minority interest is shown as a separate equity account or as a liability of indefinite term.",
+                "Enter \u2018NA\u2019 if not applicable.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Total Liabilities": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the sum of current liabilities plus long- term debt plus other non-current liabilities (including deferred taxes, investment tax credit, and minority interest) of the entity identified in Field 2 or Field 49.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Retained Earnings": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the cumulative retained earnings of the entity identified in Field 2 or Field 49 less total dividend distributions to shareholders.",
+                "Typically, it is the prior year\u2019s retained earnings plus net income less distributions.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Capital Expenditures": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the funds used to acquire a long-term asset resulting in depreciation deductions over the life of the acquired asset.",
+                "Report gross of depreciation.",
+                "Report data for the trailing twelve month (TTM) period ended on the date reported in Field 52.",
+                "Data Type: Rounded whole dollar amount",
+                "Example: 20000000",
+                "Must supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal)."
+            ]
+        },
+        "Special Purpose Entity Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate \u20182\u2019 (Yes) if the obligor (as identified in Field 2) is organized as a bankruptcy remote, special purpose entity (SPE) where the primary source of repayment depends on the performance of specified underlying assets.",
+                "Relevant SPE obligors include, ABCP conduits, securitization trusts, and other structured variable interest entities established to purchase and finance assets through the tranching of risk.",
+                "Entities which are trusts for the purpose of personal wealth management or Op Co/Prop Co structures should be reported as \u20181\u2019 (No).",
+                "Allowable Values: 1. No, 2. Yes"
+            ]
+        },
+        "Lower of Cost or Market Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether the loan is accounted for under the fair value option or is held for sale and carried at the lower-of-cost-or-market (LOCOM).",
+                "For loans not accounted for under the fair value option or not held for sale, report Option 3 (NA).",
+                "Allowable Values: 1. LOCOM, 2. FVO, 3. NA"
+            ]
+        },
+        "SNC Internal Credit ID": {
+            "Mandatory": true,
+            "Condition": [
+                "May not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report the reporting BHC\u2019s or IHC\u2019s or SLHC\u2019s Internal Credit ID as reported in the Shared National Credit collection if the credit facility is reported in SNC and the reporting entity is the lead bank/agent (option 5 in Field 34).",
+                "Report \u2018NA\u2019 if the credit facility is not reported in the Shared National Credit collection or if the reporting entity is a participant in the Shared National Credit credit facility."
+            ]
+        },
+        "Probability of Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 4 decimal places, e.g., 0.05% is 0.0005; 100% is 1. Use decimal format; do not use scientific notation.",
+                "Report advanced IRB parameter estimate for the probability of default (PD) as defined in the Rule, for firms subject to advanced approaches for regulatory capital.",
+                "Report 100 percent (\u20181) for a defaulted obligor.",
+                "Report the PD estimate that corresponds to the Obligor Internal Risk Rating reported in Field 10, for firms not subject to the advanced approaches for regulatory capital.",
+                "Report \u2018NA\u2019 if the reporting entity does not assign a PD estimate to the Obligor Internal Risk Rating."
+            ]
+        },
+        "Loss Given Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 4 decimal places, e.g., 0.05% is 0.0005. Use decimal format; do not use scientific notation.",
+                "For firms that are subject to the advanced approaches for regulatory capital, report the advanced IRB LGD estimate at the loan level as defined in the Rule.If the credit facility includes multiple loans with different LGD assignments, report the dollar weighted average LGD that approximates the overall LGD on the committed balance of the credit facility.",
+                "For firms that are not subject to the advanced approaches for regulatory capital, report the credit facility LGD estimate from the reporting entity\u2019s credit risk management system. If an LGD estimate is not assigned, report \u2018NA.\u2019"
+            ]
+        },
+        "Exposure At Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000. Supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal).",
+                "For firms that are subject to the advanced approaches for regulatory capital, report the advanced IRB parameter estimate for the Exposure at Default (EAD). If the credit facility includes multiple loans with different EAD assignments, report the dollar weighted average EAD that approximates the overall EAD on the committed balance of the credit facility.",
+                "For firms that are not subject to the advanced approaches for regulatory capital, report the credit facility EAD estimate from the reporting entity\u2019s internal credit risk management system. If an EAD estimate is not assigned, report \u2018NA\u2019."
+            ]
+        },
+        "Renewal Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Report the date on which the most recent renewal notification became effective if the credit facility has been renewed per the terms of the original loan agreement, re-priced, or has a change in the maturity date such that the Origination Date did not change.",
+                "If a credit facility has been renewed as part of a major modification such that the contractual date of the original loan is changed, then such date would be reported in Field 18 (Origination Date) and the BHC, IHC and SLHC should report 9999-12-31 in this field.",
+                "If the credit facility has not been renewed the BHC, IHC and SLHC should report 9999-12-31 in this field."
+            ]
+        },
+        "Credit Facility Currency": {
+            "Mandatory": true,
+            "Condition": [
+                "Standard ISO 4127 three-letter currency codes available at http://www.iso.org/iso/currency_codes",
+                "Indicate the currency denomination for contractual principal and interest payments on the credit facility, using the relevant three-letter ISO 4217 currency code.",
+                "If payments are legally permitted or required in more than one currency, indicate the predominant currency for contractual credit facility payments.",
+                "All amounts reported in other fields of this schedule must be in terms of US Dollars.",
+                "The predominant currency should be the currency which represents the predominant share of the credit facility committed balance."
+            ]
+        },
+        "Collateral Market Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For facilities which require ongoing or periodic valuation of the collateral, report the market value of the collateral as of the reporting date.",
+                "Report \u2018NA\u2019 if the market value of collateral is not updated in the reporting entity\u2019s internal risk management systems as of the reporting date."
+            ]
+        },
+        "Prepayment Penalty Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "1. Yes",
+                "2. The prepayment penalty has expired",
+                "3. No prepayment penalty clause",
+                "Indicate whether the credit facility has a prepayment penalty clause in effect which may include yield maintenance.",
+                "Indicate option 1 (Yes) if the credit facility currently has a prepayment penalty clause in effect.",
+                "If the facility had a prepayment penalty clause that has since expired, report option 2.",
+                "If the facility does not have a prepayment penalty clause, report option 3."
+            ]
+        },
+        "Entity Industry Code": {
+            "Mandatory": true,
+            "Condition": [
+                "Report 4 to 6 digit number. If this code is not available, then provide a SIC or GICS industry code.",
+                "Report the numeric code that describes the primary business activity of the entity identified in Field 49 according to the North American Industry Classification System (NAICS).",
+                "If the NAICS code is not available, provide either the Standard Industrial Classification (SIC), or Global Industry Classification Standard (GICS).",
+                "If the entity identified in Field 49 is an individual, the industry code should be consistent with the industry in which the commercial purpose of the loan operates.",
+                "If the business or individual operates in multiple industries, the BHC, IHC and SLHC should report the industry that best represents the commercial risk of the loan (i.e., the predominant industry)."
+            ]
+        },
+        "Participation Interest": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 4 decimal places, e.g., 0.05% is 0.0005. Use decimal format; do not use scientific notation.",
+                "For participated or syndicated credit facilities that have closed and settled, report the percentage of the total loan commitment held by the BHC or IHC or SLHC.",
+                "If the credit facility is not participated or syndicated, report 1.",
+                "If the credit facility is syndicated and reported as options 1, 2, or 3 in Field 100, report NA.",
+                "For fronting exposures, report 1."
+            ]
+        },
+        "Leveraged Loan Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate '2' (Yes) if the credit facility is defined as a leveraged loan per criteria in the reporting entity\u2019s internal risk management framework developed pursuant to SR 13-3 (Interagency Guidance on Leveraged Lending).",
+                "1. No",
+                "2. Yes"
+            ]
+        },
+        "Disposition Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the disposition method for any credit facility that was disposed during the reporting quarter.",
+                "If the BHC or IHC or SLHC is still pursuing payment of principal, interest or fees, report as option \u201c0\u201d. Rebookings/restructures where loan amounts are transferred or combined between obligations should be reported as either option 1 (Payoff) or option 2 (Involuntary payoff) depending on the occurrence of default.",
+                "0. Active - Report for all credit facilities required to be reported in this data collection and do not meet the definitions of options 1 through 8 as of the reporting date.",
+                "1. Payoff \u2013 Report all instances where the credit facility has been paid in full by the borrower, or where an undrawn credit facility reaches maturity and is not renewed.",
+                "2. Involuntary Payoff \u2013 Report all instances where the credit facility has been paid in full after the occurrence of default per the terms of the credit agreement.",
+                "3. Involuntary Liquidation \u2013 Report all instances where the credit facility has been liquidated either through foreclosure proceedings or another settlement option resulting in incomplete repayment of principal. Include short-sales, charge-offs, as well as REO. This includes loans active in the quarter prior to the reporting quarter that were sold at a foreclosure sale and taken into REO in the reporting quarter. Also include all instances where credit has been resolved (i.e. no longer pursuing collection) but not through foreclosures, servicing transfers, or payments made by the obligor.",
+                "4. Sold or fully participated \u2013 Report all instances where the loan has been sold or fully participated to another institution during the reporting quarter. For fully syndicated loans, report option 5 (Fully syndicated).",
+                "5. Fully Syndicated \u2013 Report all instances where 100% of the commitment has been syndicated to other institutions during the reporting quarter.",
+                "6. Below reporting threshold \u2013 Report all instances where the credit facility fell below the $1 million reporting threshold.",
+                "7. Transfer to another Y-14 schedule. Indicate the schedule where the credit facility is now reported in Field 99 below.",
+                "8. Expired Commitment to Commit",
+                "Allowable Values:",
+                "0. Active",
+                "1. Payoff",
+                "2. Involuntary Payoff",
+                "3. Involuntary Liquidation",
+                "4. Sold or fully participated",
+                "5. Fully syndicated",
+                "6. Below reporting threshold",
+                "7. Transfer to another Y-14 schedule",
+                "8. Expired Commitment to Commit"
+            ]
+        },
+        "Disposition Schedule Shift": {
+            "Mandatory": true,
+            "Condition": [
+                "For credit facilities reported with option 7 (Transfer to another Y\u201014 schedule) in field 98, indicate the Y\u201014 report, schedule, and subschedule to which the credit facility shifted.",
+                "The reported format should follow these examples:",
+                "If the credit facility transferred to FR Y\u201014Q Schedule H.2 Commercial Real Estate, report \u201cQ.H.2\u201d.",
+                "If the credit facility transferred to FR Y\u201014M Schedule D.1 Domestic Credit Card Data Collection Data Dictionary, report \u201cM.D.1\u201d.",
+                "Report in the format using the examples below:",
+                "If the credit facility transferred to FR Y\u201014Q Schedule H.2 Commercial Real Estate, report \u201cQ.H.2\u201d.",
+                "If the credit facility transferred to FR Y\u201014M Schedule D.1 Domestic Credit Card Data Collection Data Dictionary, report \u201cM.D.1\u201d."
+            ]
+        },
+        "Syndicated Loan Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Report whether the syndicated loan commitment is single signed by the BHC or IHC or SLHC, counter signed by the borrower (dual signed), or closed but not yet settled, or closed and settled. Closed and settled refers to the final phase where loan documents are fully executed and binding with post\u2010closing selldown to all participants complete.",
+                "Loans which have closed but are still pending execution of final documentation by all syndicate participants should be reported as option 3 (Closed but not settled).",
+                "For loans that are not syndicated, indicate option 0 (NA).",
+                "Allowable Values:",
+                "0. NA",
+                "1. Single\u2010signed",
+                "2. Dual\u2010signed",
+                "3. Closed but not settled",
+                "4. Closed and settled"
+            ]
+        },
+        "Target Hold": {
+            "Mandatory": true,
+            "Condition": [
+                "For loans in the syndicated loan pipeline (Options 1, 2 or 3 in Field 100), report the percentage of the total commitment the BHC or IHC or SLHC intends to hold.",
+                "If the credit facility is reported as option 0 (NA) or option 4 (closed and settled) in Field 100, report NA.",
+                "Express as a decimal to 4 decimal places, e.g., 0.05% is 0.0005. Use decimal format; do not use scientific notation.",
+                "Report NA if the credit facility is reported as option 0 or 4 in Field 100."
+            ]
+        },
+        "ASC326-20": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the allowance for credit losses per ASC 326-20.",
+                "Provide at the credit facility level if available, otherwise report a pro-rated allocation from the collective (pool) basis.",
+                "Provide if available at a credit facility level, otherwise a pro-rated allocation from the collective (pool) level to the loan level may be reported.",
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting such as dollar sign, commas or decimals.",
+                "Should be 0 if there is no ASC326-20 Reserve for the loan."
+            ]
+        },
+        "Purchased Credit Deteriorated Noncredit Discount": {
+            "Mandatory": true,
+            "Condition": [
+                "If the facility is a purchased credit-deteriorated (PCD) asset, report the noncredit discount (or premium) resulting from its acquisition (ASC 326-20-30-13). Provide at the credit facility level if available, otherwise report a pro-rated allocation from the collective (pool) basis.",
+                "Leave blank if the facility is not considered a PCD asset.",
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting such as no dollar sign, commas or decimals."
+            ]
+        },
+        "Current Maturity Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the maturity date as the last date upon which the funds must be repaid, exclusive of extension options.",
+                "For demand loan, enter \u20189999-01-01\u2019.",
+                "For corporate loans in the syndicated pipeline, until the syndicated loan is reported as closed and settled (option4 in Field 100), report the estimated maturity date based on the tenor stated in the commitment letter.",
+                "For commitments to commit which are not syndicated, report the estimated maturity date based on the tenor in the terms extended to the borrower.",
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14"
+            ]
+        },
+        "Committed Exposure Global Par Value": {
+            "Mandatory": true,
+            "Condition": [
+                "For held for sale loans and loans accounted for under a fair value option, report the total commitment amount as the amount the obligor is contractually allowed to borrow according to the credit agreement for the entire credit facility.",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019."
+            ]
+        },
+        "Utilized Exposure Global Par Value": {
+            "Mandatory": true,
+            "Condition": [
+                "For held for sale loans and loans accounted for under a fair value option, report the outstanding funded exposure.",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019."
+            ]
+        },
+        "Committed Exposure Global Fair Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the fair value of the entire credit facility if the loan is held for sale or accounted for under a fair value option.",
+                "Format: Rounded whole dollar amount (e.g., 20000000).",
+                "Values should be numeric without any formatting (no dollar sign, commas, or decimals).",
+                "Use a negative sign \u2018-\u2018, not parentheses () for negative values.",
+                "Report 'NA' if not held for sale or accounted for under a fair value option."
+            ]
+        },
+        "Utilized Exposure Global Fair Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the fair value of the outstanding funded exposure if the loan is held for sale or accounted for under a fair value option.",
+                "Format: Rounded whole dollar amount (e.g., 20000000).",
+                "Values should be numeric without any formatting (no dollar sign, commas, or decimals).",
+                "Use a negative sign \u2018-\u2018, not parentheses () for negative values.",
+                "Report 'NA' if not held for sale or accounted for under a fair value option."
+            ]
+        },
+        "Obligor LEI": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the Legal Entity Identifier (LEI) of the obligor identified in Field 4, if available.",
+                "LEI is a 20-character alphanumeric code that uniquely identifies legally distinct entities engaging in financial transactions.",
+                "Must be a valid 20-character alphanumeric LEI issued by a Local Operating Unit (LOU) of the Global LEI System, or 'NA'."
+            ]
+        },
+        "Primary Source of Repayment LEI": {
+            "Mandatory": true,
+            "Condition": [
+                "If the primary source of repayment is different from the obligor in Field 4, report the Legal Entity Identifier (LEI) of the entity identified in Field 50, if available.",
+                "LEI is a 20-character alphanumeric code that uniquely identifies legally distinct entities engaging in financial transactions.",
+                "Must be a valid 20-character alphanumeric LEI issued by a Local Operating Unit (LOU) of the Global LEI System, or 'NA'.",
+                "Leave blank if the entity is the same as the Obligor identified in Field 2."
+            ]
+        }
+    },
+    "H.2 Commercial Real Estate": {
+        "Loan Number": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be unique within a submission and over time.",
+                "The same submission file must not have two facilities with the same Loan Number.",
+                "May not contain a carriage return, line feed, comma or any unprintable character."
+            ]
+        },
+        "Obligor Name": {
+            "Mandatory": true,
+            "Condition": [
+                "Must not contain a vertical bar (|, ASCII 7C), carriage return, line feed, comma or any unprintable character.",
+                "If the borrowing entity is an individual(s) (Natural Person (s)), substitute with the text: 'Individual'"
+            ]
+        },
+        "Outstanding Balance": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal).",
+                "For fully undrawn commitments, report 0 (zero).",
+                "For disposed credit facilities, report 0 (zero)."
+            ]
+        },
+        "Line Reported on FR Y-9C": {
+            "Mandatory": true,
+            "Condition": [
+                "Integer code corresponding to the line number on the FR Y-9C, HC-C.",
+                "Allowable values: 1, 2, 3, 4, 5, 6, 7 (refer to the descriptions for each value).",
+                "If the credit facility includes multiple loans, report the integer code corresponding to the type of loan which accounts for the largest share of the credit facility committed balance."
+            ]
+        },
+        "Committed Exposure Global": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal).",
+                "Sum of loan and lease financing receivables recorded in FR Y-9C, Schedule HC-C (Field 3) and unused commitment portion in Schedules HC-F, HC-G, and HC-L.",
+                "For facilities with multiple lenders, only provide the reporting entity\u2019s pro-rata commitment, net of noted adjustments.",
+                "For commitments to commit, report the total commitment amount approved and offered to the borrower."
+            ]
+        },
+        "Cumulative Charge-offs": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal).",
+                "Should be \u20180\u2019 (zero) if there is no charge-off for the facility.",
+                "Should be \u2018NA\u2019 for loans held for sale or accounted for under the fair value option.",
+                "Report the cumulative net charge-offs associated with this CRE loan on the reporting entity's books.",
+                "For disposed loans, report the cumulative charge-offs as of the date of disposition."
+            ]
+        },
+        "Participation Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate if the CRE Loan is participated or syndicated among other financial institutions and if it is part of the Shared National Credit Program.",
+                "Allowable values: 1, 2, 3, 4, 5 (refer to the descriptions for each value).",
+                "For fronting exposures, report option 1 \u2018No\u2019."
+            ]
+        },
+        "Lien Position": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate using integer code if the mortgage is a first lien on the property or a subordinate lien.",
+                "Allowable values: 1, 2, 3, 4, 5 (refer to the descriptions for each value).",
+                "For multiple properties, report the lien on the predominant property (highest collateral value).",
+                "If no property predominates, report integer code for \u201cMixed Liens\u201d.",
+                "For loans secured by a pledge of partnership interests, indicate a subordinate lien position."
+            ]
+        },
+        "Property Type": {
+            "Mandatory": true,
+            "Condition": [
+                "If the CRE Loan is secured by multiple property types and one predominates, indicate the predominant property type (highest collateral value).",
+                "If the CRE Loan is secured by multiple property types and no single one predominates, indicate integer code for 'Mixed'.",
+                "If the loan is secured by a property type which is not included in the list, then indicate integer code for 'Other'.",
+                "Allowable values: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 (refer to the descriptions for each value).",
+                "If the CRE Loan commitment covers ONLY the land and lot development phase, then report as 'Land and Lot Development.' If however, the CRE Loan commitment is for land development AND vertical construction, report it under the appropriate category."
+            ]
+        },
+        "Origination Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Must be before or equal to the period end date of the data.",
+                "Report the contractual date of the credit agreement.",
+                "If there has been a major modification to the loan, use the revised contractual date.",
+                "Exclude renewals which meet the definition in the \u2018Renewal Date\u2019 Field 54.",
+                "For commitments to commit, report the date on which the BHC or IHC or SLHC extended terms to the borrower."
+            ]
+        },
+        "Location": {
+            "Mandatory": true,
+            "Condition": [
+                "For locations within the US states, Washington DC, Puerto Rico, the US Virgin Islands, Guam, Palau, Micronesia, the Northern Marianas, or the Marshall Islands: five-digit ZIP code. If the ZIP code begins with zeroes, leading zeroes must be specified with no punctuation.",
+                "For other countries, the 2-letter country code.",
+                "For multiple properties without one predominating, use \u201cMultiple\u201d.",
+                "If one CRE Loan is secured by multiple properties and one location predominates, specify that location. The predominant property should be the one with the highest collateral value as of the last valuation date."
+            ]
+        },
+        "Net Operating Income at Origination": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting such as dollar signs, commas or decimals but negative numbers can be submitted. For negative values use a negative sign \u2018-\u2018 not parenthesis ().",
+                "\u20180\u2019 (zero) is to be used if the NOI is actually zero.",
+                "NA is to be used if the loan is a land and construction loan that is (1) not currently generating income, and (2) not cross-collateralized with another property currently generating income.",
+                "Numeric values are to be used for facilities where the NOI is applicable and available.",
+                "Report the Net Operating Income (NOI) at origination (date given in Field 10).",
+                "For loans that are cross-collateralized at origination, the NOI provided should represent the total NOI available to service the debt from the underlying collateral pool.",
+                "For loans that are cross- collateralized after origination (date given in Field 10), the NOI provided should be the total NOI available at origination, not the subsequently combined NOI from the collateral pool."
+            ]
+        },
+        "Value at Origination": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting such as dollar signs, commas or decimals.",
+                "Value is prorated based on the bank's ownership interest in a facility.",
+                "If a loan is secured by multiple properties, report the sum of all property values as adjusted for prorated participations.",
+                "In cases of cross-collateralization, provide the sum of all property values as adjusted for prorated participations."
+            ]
+        },
+        "Value Basis": {
+            "Mandatory": true,
+            "Condition": [
+                "Integer code indicating how the value was calculated.",
+                "Allowable values: 1, 2, 3 (refer to the descriptions for each value)."
+            ]
+        },
+        "Internal Rating": {
+            "Mandatory": true,
+            "Condition": [
+                "The general form looks like this: Rating-code-1:% as decimal; Rating-code-2:% as decimal;\u2026",
+                "Each pair of rating code fractional amount would be separated by a semicolon and there should be as many codes as there are different split ratings in the credit.",
+                "All the decimal amounts must sum to 1.",
+                "Internal Rating must be consistent with Schedule H.4 (Internal Risk Rating Schedule), Field 1."
+            ]
+        },
+        "Probability of Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 4 decimal places, e.g., 50% is 0.5000. Use decimal format; do not use scientific notation.",
+                "For a defaulted obligor, report 100 percent (\u20181\u2019).",
+                "If the reporting entity does not assign a credit facility PD estimate, report \u2018NA\u2019."
+            ]
+        },
+        "Loss Given Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 2 decimal places, e.g., 50% is 0.50. Use decimal format; do not use scientific notation.",
+                "If the reporting entity does not assign a credit facility LGD estimate, report \u2018NA\u2019.",
+                "If the credit facility includes multiple loans with different LGD assignments, report the dollar weighted average LGD that approximates the overall LGD on the committed balance of the credit facility."
+            ]
+        },
+        "Exposure At Default": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting (no dollar sign, commas or decimal).",
+                "If the reporting entity does not assign a credit facility EAD estimate, report \u2018NA\u2019.",
+                "If the credit facility includes multiple loans with different EAD assignments, report the dollar weighted average EAD that approximates the overall EAD on the committed balance of the credit facility."
+            ]
+        },
+        "Maturity Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Report the last date upon which the funds must be repaid, inclusive of extension options that are solely at the borrower\u2019s discretion, and according to the most recent terms of the credit agreement.",
+                "For demand loan, enter \u20189999-01-01\u2019.",
+                "For commitments to commit, report the estimated maturity date based on the tenor in the extended terms."
+            ]
+        },
+        "Amortization": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in whole months, e.g., 10 years would 120.",
+                "For a non-standard amortization schedule, report \u2018-1.\u2019",
+                "For loans with a monthly amortization schedule, report the original amortization term of the loan in months from the date given in Field 10 at the rate implied by the current payment disregarding any balloon payment.",
+                "For Interest only loans enter \u20180\u2019 (zero).",
+                "After the interest only period is over, report the number of months to fully amortize the loan."
+            ]
+        },
+        "Recourse": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether credit facility provides for full, partial or no recourse to a sponsor or guarantor as a source of repayment, as of the reporting date.",
+                "Allowable values: 3, 4, 5 (refer to the descriptions for each value)."
+            ]
+        },
+        "Line of Business": {
+            "Mandatory": false,
+            "Condition": [
+                "Free text describing the line of business. For example: Retail, Private Banking, Corporate Banking, etc.",
+                "Must be consistent with line of business names as reported in Schedule H.3 (Line of Business Schedule), Field 1."
+            ]
+        },
+        "Current Occupancy": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide as a fraction (2 decimal places), e.g.: \u201c0.80\u201d for 80%.",
+                "\u20180\u2019 (zero) is to be used if the occupancy is actually zero.",
+                "NA is to be used for facilities where the data element is not applicable or the property does not have a currently valid certificate of occupancy.",
+                "Numeric values are to be used for facilities where the occupancy is applicable and available.",
+                "Report the current physical occupancy of rent-paying tenants as a % of net rentable square footage.",
+                "For loans originated for the purpose of condo construction where construction is completed but not all of the units have been sold, report the physical occupancy rate based on the number of units owned by the borrower."
+            ]
+        },
+        "Anchor Tenant": {
+            "Mandatory": false,
+            "Condition": [
+                "Must not contain a vertical bar (|, ASCII 7C), carriage return, line feed, comma or any unprintable character.",
+                "If there are multiple Anchor tenants, separate names with a double semi- colon \u2018;;\u2019.",
+                "Report the name of anchor tenant (s), if applicable."
+            ]
+        },
+        "Loan Purpose": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate the purpose of the CRE Loan at the origination date, as recorded in Field 10, using an integer.",
+                "Allowable values: 1, 2, 3, 6, 7, 8, 9 (refer to the descriptions for each value)."
+            ]
+        },
+        "Interest Rate Variability": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate the variability of current interest rates (Fixed, Floating, or Mixed) to maturity.",
+                "Allowable values: 1, 2, 3, 4 (refer to the descriptions for each value).",
+                "For fully undrawn commitments, report interest rate variability that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Rate": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide as a decimal, e.g.: 0.0575 for 5.75%.",
+                "Enter \u2018NA\u2019 if the facility is entirely fee based.",
+                "Report the current interest rate charged on the CRE Loan.",
+                "If the facility includes multiple draws with different interest rates, enter the dollar weighted average interest rate that approximates the overall rate on the drawn balance of the facility.",
+                "Report interest rate exclusive of interest rate swaps.",
+                "For fully undrawn commitments, report the interest rate that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Rate Index": {
+            "Mandatory": true,
+            "Condition": [
+                "For floating rate CRE Loans, report the list base interest rate using integer code.",
+                "If borrower has an option, select the index actually in use.",
+                "Allowable values: 1, 2, 3, 4, 5, 6, 7 (refer to the descriptions for each value).",
+                "For fully undrawn commitments, report the interest rate index that would apply if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Rate Spread": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide as a decimal, e.g.: 0.0575 for 5.75%",
+                "Enter \u2018NA\u2019 if the loan is fixed or entirely fee based.",
+                "Negative numbers can be submitted. For negative values use a negative sign \u2018-\u2018 not parenthesis ().",
+                "For floating rate CRE Loans, report the spread from base rate in basis points (this can be either positive or negative).",
+                "For fully undrawn commitments, report the interest rate spread that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Rate Ceiling": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide as a decimal, e.g.: 0.0575 for 5.75%",
+                "Enter \u2018NA\u2019 if the loan is fixed or entirely fee based",
+                "Enter \u2018NONE\u2019 if no ceiling.",
+                "For floating rate CRE Loans, report the rate ceiling if one is contained in the credit agreement.",
+                "For fully undrawn commitments, report the interest rate ceiling that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Rate Floor": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide as a decimal, e.g.: 0.0575 for 5.75%",
+                "Enter \u2018NA\u2019 if the loan is fixed or entirely fee based",
+                "Enter \u2018NONE\u2019 if no floor.",
+                "For floating rate CRE Loans, report the rate floor if one is contained in the credit agreement.",
+                "For fully undrawn commitments, report the interest rate floor that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Frequency of Rate Reset": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide in whole months.",
+                "Enter \u2018NA\u2019 if the loan is fixed or entirely fee based.",
+                "For floating rate CRE Loans, report the frequency of interest rate reset in months. For frequencies less than (1) month, report as (1) month.",
+                "For fully undrawn commitments, report the frequency of the interest rate reset that would apply per the terms of the credit agreement if the credit facility was funded and fully drawn on the reporting date."
+            ]
+        },
+        "Interest Reserves": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded to whole dollar amount with no cents, punctuation or dollar signs.",
+                "\u20180\u2019 (zero) is to be used for facilities where an interest reserve is not part of the transaction or where the interest reserve is not funded.",
+                "Numeric values are to be used for facilities where the interest reserve is applicable and available.",
+                "Report the dollar amount of remaining Interest rate reserves.",
+                "If a participation, prorate based on your share of the credit."
+            ]
+        },
+        "Origination Amount": {
+            "Mandatory": true,
+            "Condition": [
+                "Round to the whole dollar.",
+                "Do not include punctuation or dollar sign.",
+                "Report the bank\u2019s total commitment as of the origination date given in Field 10.",
+                "For facilities with multiple lenders, only provide the reporting entity\u2019s pro-rata commitment."
+            ]
+        },
+        "Original/Previous Loan Number": {
+            "Mandatory": true,
+            "Condition": [
+                "May not contain a carriage return, line feed, -or any unprintable character.",
+                "Provide the ID separated by a , (comma)."
+            ]
+        },
+        "Acquired Loan": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate if the loan was acquired via a bank, portfolio or individual loan purchase.",
+                "Allowable values: 1, 2 (refer to the descriptions for each value).",
+                "Once a loan has been renewed or modified, it should no longer be reported as an acquired loan."
+            ]
+        },
+        "# Days Principal or Interest Past Due": {
+            "Mandatory": true,
+            "Condition": [
+                "Numbers only.",
+                "For fully undrawn commitments, enter \u20180\u2019 (zero).",
+                "Report the longest number of days principal and/or interest payments are past due, if such payments are past due 30 days or more."
+            ]
+        },
+        "Non-Accrual Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "If there is no non-accrual date, enter \u20189999-12-31\u2019.",
+                "For fully undrawn commitments, enter \u20189999-12-31\u2019.",
+                "Report the date the credit facility was placed on non- accrual, if applicable."
+            ]
+        },
+        "Property Size": {
+            "Mandatory": true,
+            "Condition": [
+                "Whole number (no commas or decimals).",
+                "If the facility is secured by a single property which is comprised of multiple property types and no single property type predominates, report \u2018Other\u2019.",
+                "If the loan is secured by multiple properties, report \u2018NA.\u2019",
+                "Report this field only in cases where the facility is secured by one property.",
+                "Square footage should be reported as net rentable area"
+            ]
+        },
+        "Net Operating Income Current": {
+            "Mandatory": true,
+            "Condition": [
+                "Refer to Field 12 for allowable values.",
+                "Report the most recent annualized NOI as of the report date that serves as the primary source of repayment."
+            ]
+        },
+        "Last NOI Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Must be before or equal to the report date.",
+                "This date may be Null (i.e. blank) if the Net Operating Income (NOI) Current (Field 40) is \u2018NA\u2019.",
+                "Report the date for the value provided in CurrentNetOperatingInc (Field 40)."
+            ]
+        },
+        "Current Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting such as dollar signs, commas or decimals.",
+                "Value is prorated based on the bank's ownership interest in a facility.",
+                "If a loan is secured by multiple properties, report the sum of all property values as adjusted for prorated participations.",
+                "In cases of cross- collateralization, provide the sum of all property values as adjusted for prorated participations.",
+                "Report the most recent value of the subject property"
+            ]
+        },
+        "Last Valuation Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Must be before or equal to the report date.",
+                "Report the date of the most recent valuation provided in Current Value (Field 42)."
+            ]
+        },
+        "Cross Collateralized Loan Numbers": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide the LoanNumber separated by a , (comma).",
+                "Leave blank if loan is not cross collateralized.",
+                "Report the LoanNumbers (Field 1) for all the loans which are cross- collateralized with loans reported in Field 1."
+            ]
+        },
+        "Additional Collateral": {
+            "Mandatory": false,
+            "Condition": [
+                "Rounded whole dollar amount with no cents, e.g.: 20000000",
+                "Supply numeric values without any non-numeric formatting such as dollar signs, commas or decimals.",
+                "Report the value of any cash and marketable securities that are pledged as collateral and where the bank has a first perfected security interest."
+            ]
+        },
+        "Troubled Debt Restructuring": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether the loan has been restructured in a troubled debt restructuring as defined in the FR Y-9C Glossary entry for \u201ctroubled debt restructuring.\u201d",
+                "Allowable values: 1, 2 (refer to the descriptions for each value)."
+            ]
+        },
+        "Lower of Cost or Market Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether the loan is accounted for under the fair value option or is held for sale and carried at the lower-of-cost-or-market (LOCOM).",
+                "Allowable values: 1, 2, 3 (refer to the descriptions for each value)."
+            ]
+        },
+        "SNC Internal Credit ID": {
+            "Mandatory": true,
+            "Condition": [
+                "May not contain a carriage return, line feed, comma or any unprintable character.",
+                "Report \u2018NA\u2019 if the credit facility is not reported in the Shared National Credit collection or if the reporting BHC or IHC or SLHC is not the agent.",
+                "If the credit facility is reported in the Shared National Credit collection and the reporting BHC or IHC or SLHC is the lead bank/agent (option 5 in Field 7), indicate the reporting BHC\u2019s or IHC\u2019s or SLHC\u2019s Internal Credit ID as reported in the Shared National Credit collection for this credit facility as of the most recent filing date."
+            ]
+        },
+        "Renewal Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "If the credit facility has been renewed per the terms of the original loan agreement, re-priced, or has a change in the maturity date such that the Origination Date did not change, report the date on which the most recent renewal notification became effective.",
+                "If the credit facility has not been renewed the BHC or IHC or SLHC should report 9999-12-31 in this field."
+            ]
+        },
+        "Credit Facility Currency": {
+            "Mandatory": true,
+            "Condition": [
+                "Standard ISO 4127 three-letter currency codes",
+                "Indicate the currency denomination for contractual principal and interest payments on the credit facility, using the relevant three-letter ISO 4217 currency code.",
+                "If payments are legally permitted or required in more than one currency, indicate the predominant currency for contractual credit facility payments.",
+                "all amounts reported in other fields of this schedule must be in terms of US Dollars."
+            ]
+        },
+        "Current Occupancy Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy-mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Must be before or equal to report date.",
+                "This date may be Null (i.e. blank) if the Current Occupancy (Field 23) is \u2018NA\u2019.",
+                "Report the date on which the most recent occupancy level indicated in Field 23 (Current Occupancy) was determined by the borrower."
+            ]
+        },
+        "Current Value Basis": {
+            "Mandatory": true,
+            "Condition": [
+                "Provide integer code if the Current Value in Field 42 was calculated using an \u201cas is,\u201d \u201cas stabilized\u201d or \u201cas completed\u201d value",
+                "Allowable values: 1, 2, 3 (refer to the descriptions for each value)."
+            ]
+        },
+        "Prepayment Penalty Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether the credit facility has a prepayment penalty clause in effect which may include yield maintenance.",
+                "Allowable values: 1, 2, 3 (refer to the descriptions for each value)."
+            ]
+        },
+        "Participation Interest": {
+            "Mandatory": true,
+            "Condition": [
+                "Express as a decimal to 4 decimal places, e.g., 0.05% is 0.0005. Use decimal format; do not use scientific notation.",
+                "For participated or syndicated credit facilities, report the percentage of the total loan commitment held by the BHC or IHC or SLHC.",
+                "If the credit facility is not participated or syndicated, report 1."
+            ]
+        },
+        "Leveraged Loan Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate \u20182\u2019 (Yes) if the credit facility is defined as a leveraged loan per criteria in the reporting entity\u2019s internal risk management framework developed pursuant to SR 13-3 (Interagency Guidance on Leveraged Lending).",
+                "Allowable values: 1, 2 (refer to the descriptions for each value)."
+            ]
+        },
+        "Disposition Flag": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the disposition method for any credit facility that was disposed during the reporting quarter.",
+                "Allowable values: 0, 1, 2, 3, 4, 5, 6, 7 (refer to the descriptions for each value)."
+            ]
+        },
+        "Disposition Schedule Shift": {
+            "Mandatory": true,
+            "Condition": [
+                "Report in the format using the examples",
+                "For credit facilities reported with option 6 (Transfer to another Y-14 schedule) in field 61, indicate the Y-14 report, schedule, and sub-schedule to which the credit facility shifted."
+            ]
+        },
+        "ASC326-20": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting such as no dollar signs, commas or decimals.",
+                "Should be 0 if there is no ASC326-20 Reserve for the loan.",
+                "Report the allowance for credit losses per ASC 326-20.",
+                "Provide at the credit facility level if available otherwise report a pro-rated allocation from the collective (pool)."
+            ]
+        },
+        "Purchased Credit Deteriorated Noncredit Discount": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting such as no dollar signs, commas or decimals.",
+                "Leave Blank if the facility is not considered a PCD asset.",
+                "If the facility is a purchased credit-deteriorated (PCD) asset, report the noncredit discount (or premium) resulting from its acquisition (ASC 326-20-30-13).",
+                "Provide at the credit facility level if available, otherwise report a pro-rated allocation from the collective (pool) basis."
+            ]
+        },
+        "Current Maturity Date": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be in yyyy- mm-dd format, e.g.: 2005-02-01 or 1999-12-14",
+                "Report the maturity date as the last date upon which the funds must be repaid, exclusive of extension options.",
+                "For demand loan, enter \u20189999-01-01\u2019.",
+                "For commitments to commit, report the estimated maturity date based on the tenor in the terms extended to the borrower."
+            ]
+        },
+        "Committed Exposure Global Par Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "For held for sale loans and loans accounted for under a fair value option, report the total commitment amount as the amount the obligor is contractually allowed to borrow according to the credit agreement for the entire credit facility."
+            ]
+        },
+        "Outstanding Balance Par Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "For held for sale loans and loans accounted for under a fair value option, report the outstanding funded exposure."
+            ]
+        },
+        "Committed Exposure Global Fair Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "For held for sale loans and loans accounted for under a fair value option, report the fair value of the entire credit facility."
+            ]
+        },
+        "Outstanding Balance Fair Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Rounded whole dollar amount, e.g.: 20000000",
+                "Supply numeric values without any non- numeric formatting (no dollar sign, commas or decimal).",
+                "For negative values use a negative sign \u2018-\u2018, not parentheses ().",
+                "If not held for sale or accounted for under a fair value option, report \u2018NA\u2019.",
+                "For held for sale loans and loans accounted for under a fair value option, report the fair value of the outstanding funded exposure."
+            ]
+        },
+        "Obligor LEI": {
+            "Mandatory": true,
+            "Condition": [
+                "Must be a valid 20 character alphanumeric LEI issued by a LOU of the Global LEI System, or \u2018NA\u2019.",
+                "Report the Legal Entity Identifier (LEI) of the obligor identified in Field 2, if available."
+            ]
+        }
+    },
+    "H.3 Line of Business": {
+        "Line of Business": {
+            "Mandatory": true,
+            "Condition": [
+                "Free text indicating the internal line of business.",
+                "Example values: Private Banking, Corporate Banking, Asset-Based Lending, etc.",
+                "Defines the set of allowable values for Field 27 on Schedule H.1 and Field 22 on Schedule H.2."
+            ]
+        },
+        "Line of Business Description": {
+            "Mandatory": true,
+            "Condition": [
+                "Free text describing the internal line of business."
+            ]
+        }
+    },
+    "B.2 Securities 2": {
+        "New Identifier Type": {
+            "Mandatory": false,
+            "Condition": [
+                "New Report the identifier type for an investment security."
+            ]
+        },
+        "Identifier Type": {
+            "Mandatory": true,
+            "Condition": [
+                "The security must have an existing qualifying accounting hedging relationship.",
+                "Corresponds to the identifier value provided in 'Identifier Value' field.",
+                "If multiple hedging relationships exist for the same security, list the security multiple times."
+            ]
+        },
+        "Identifier Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the identifier value for an investment security.",
+                "The security must have an existing qualifying accounting hedging relationship.",
+                "If multiple hedging relationships exist for the same security, list the security multiple times."
+            ]
+        },
+        "Amortized Cost": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the amortized cost (USD equivalent) of the security being hedged.",
+                "This amount should equal the amount recorded in the Securities 1 file for this security, unless...",
+                "...the amount in Securities 1 contains trade lots or holdings that are not part of the hedging relationship, in which case...",
+                "...only include the amortized cost of the holdings of the security that are hedged under the qualifying hedging relationship.",
+                "Refer to Securities 1 instructions for allowable values."
+            ]
+        },
+        "Market Value": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the market value (USD equivalent) of the security being hedged.",
+                "This amount should equal the amount recorded in the Securities 1 file for this security, unless...",
+                "...the amount in Securities 1 contains trade lots or holdings that are not part of the hedging relationship, in which case...",
+                "...only include the amortized cost of the holdings of the security that are hedged under the qualifying hedging relationship.",
+                "Refer to Securities 1 instructions for allowable values."
+            ]
+        },
+        "Accounting Intent": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate whether the security being hedged is available-for-sale (AFS), held-to-maturity (HTM), or an equity security (EQ)."
+            ]
+        },
+        "Type of Hedge": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the type of hedge (fair value or cash flow hedge) associated with the holding as defined by ASC 815.",
+                "Make this indication for each hedged security, whether it is hedged individually or as part of a portfolio.",
+                "Allowable values: 1= Fair Value Hedge, 2=Cash Flow Hedge."
+            ]
+        },
+        "Hedged Risk": {
+            "Mandatory": true,
+            "Condition": [
+                "Indicate the risk being hedged, among potential hedged risks described under ASC 815-20-25-12 and ASC 815-20-25-15.",
+                "Allowable Values: 1=Overall Change in Fair Value or Variability in Cash Flows, 2=Interest Rate Risk, 3=Foreign Exchange Risk, 4=Credit Risk, 5 = Interest Rate Risk & Foreign Exchange Risk, 6= Interest Rate Risk & Credit Risk, 7= Foreign Exchange Risk & Credit Risk, 8 = Interest Rate Risk & Foreign Exchange Risk & Credit Risk, 9= Change in Fair Value of Embedded Call or Put Option, 10=Other, 11= Not applicable."
+            ]
+        },
+        "Hedge Interest Rate": {
+            "Mandatory": true,
+            "Condition": [
+                "For hedges of interest rate risk, indicate the benchmark interest rates from among those eligible under ASC 815-20-25-6A and other relevant guidance.",
+                "Allowable Values: 1=US Treasury Security Interest Rate, 2=London Interbank Offered Rate (LIBOR) Swap Rate, 3=Federal Funds Effective Swap Rate, 4 =Other, 5 = Not applicable."
+            ]
+        },
+        "Hedge Percentage": {
+            "Mandatory": true,
+            "Condition": [
+                "In the case of a designated fair value hedge, indicate the portion of the asset being hedged, as determined according to ASC 815-20-25-12 (b) and ASC 815-20-25-12A. ",
+                "Enter a decimal value with up to 4 decimal places between 0 and 1, inclusive.",
+                "If the hedge is allocated to 100 percent of the securities notional or 100 percent of the hedged risk associated with the investment amounts reported in 'Amortized Cost' and 'Market Value', enter a value of 1.",
+                "If the associated hedge is a designated cash flow hedge of foreign currency fluctuation, indicate the percentage of principal or interest cash flows (as applicable) being hedged in accordance with ASC 815-20-25-41."
+            ]
+        },
+        "Hedge Horizon": {
+            "Mandatory": true,
+            "Condition": [
+                "If the hedge is a fair value hedge, report the latest date of the remaining effectiveness horizon consistent with the documented risk management strategy for the fair value hedge (remaining life of the derivative instrument or shorter applicable period per ASC 815-20-25-118).",
+                "If the hedge is a cash flow hedge, report the latest date within which the latest transaction covered by the hedge is expected to occur, in line with documentation requirements under ASC 815-20-25-3 and effectiveness testing requirements under ASC 815-20-25.",
+                "Must be in yyyy-mm-dd format."
+            ]
+        },
+        "Amortized Cost USD Equivalent": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the amortized cost (USD equivalent) of the security being hedged.",
+                "Should equal the amount recorded in Securities 1 file for the security, unless the amount in Securities 1 contains trade lots or holdings that are not part of the hedging relationship",
+                "In such cases only include the amortized cost of the holdings of the security that are hedged under the qualifying hedging relationship."
+            ]
+        },
+        "Market Value USD Equivalent": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the market value (USD equivalent) of the security being hedged.",
+                "Should equal the amount recorded in Securities 1 file for the security, unless the amount in Securities 1 contains trade lots or holdings that are not part of the hedging relationship",
+                "In such cases only include the amortized cost of the holdings of the security that are hedged under the qualifying hedging relationship."
+            ]
+        },
+        "Type of Hedge(s)": {
+            "Mandatory": true,
+            "Condition": [
+                "Report the type of hedge (fair value or cash flow hedge) associated with the holding as defined by ASC 815.",
+                "Indicate for each hedged security, whether hedged individually or as part of a portfolio with similar risk as per ASC 815-20-25-12 (b), ASC 815-20-2512A, or ASC 815-10-25-15.",
+                "Allowable values: 1= Fair Value Hedge, 2=Cash Flow Hedge."
+            ]
+        }
+    }
+}
