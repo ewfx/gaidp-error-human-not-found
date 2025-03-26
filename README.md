@@ -98,7 +98,7 @@ Visualization and Interactivity - Streamlit
 - 🔹 Frontend: Streamlit
 - 🔹 Backend: Python
 - 🔹 Database: Excel
-- 🔹 Other: OpenAI API 
+- 🔹 Other: Google Gemini API 
 
 ## 👥 Team
 - **Abhishek Kulkarni** - [GitHub](https://github.com/abhishekulkarni02) | [LinkedIn](#)
