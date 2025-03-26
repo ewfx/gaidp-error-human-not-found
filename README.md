@@ -101,7 +101,7 @@ Visualization and Interactivity - Streamlit
 - 🔹 Other: Google Gemini API 
 
 ## 👥 Team
-- **Abhishek Kulkarni** - [GitHub](https://github.com/abhishekulkarni02) | [LinkedIn]()
+- **Abhishek Kulkarni** - [GitHub](https://github.com/abhishekulkarni02) | [LinkedIn](https://www.linkedin.com/in/abhishek-kulkarni-1b074122b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 - **Aditya Naik** - [GitHub](https://github.com/aditya11502) | [LinkedIn](#)
 - **Sanika Dhavale** - [GitHub](https://github.com/sanika-12) | [LinkedIn](https://www.linkedin.com/in/sanika-dhavale/)
 - **Shreya Regundwar** - [GitHub](https://github.com/Regundwarshreya) | [LinkedIn](https://www.linkedin.com/in/shreya-regundwar-112756221/)
