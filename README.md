@@ -25,6 +25,7 @@ Purpose - Automated Rule Discovery - Uses AI to extract rules and constraints fr
 🖼️ Screenshots:
 
 ![Screenshot 1](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/artifacts/demo/UI.jpeg)
+![Screenshot 1](https://github.com/ewfx/gaidp-error-human-not-found/blob/main/artifacts/arch/Architecture Diagram.jpeg")
 
 ## 💡 Inspiration
 In the banking domain, ensuring accurate and rule-compliant customer data profiling is critical. Traditionally, this process requires significant manual effort to categorize and validate data while adhering to strict regulatory and business rules. However, manual checks are time-consuming, error-prone, and difficult to scale.
